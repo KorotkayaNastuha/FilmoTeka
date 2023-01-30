@@ -1,0 +1,59 @@
+<header class="header container">
+
+  
+  <nav class="header__nav">
+    <a class="header__logo header--link" href="./index.html">
+      <svg class="header__logo-icon">
+        <use href="./images/icons.svg#icon-film" width="24" height="24"></use>
+      </svg>
+      <span class="header__logo-text">Filmoteka</span>
+    </a>
+    <ul class="header__nav-list">
+      <li class="header__nav-item">
+        <a class="header--link header__link--active" href="./index.html"
+          >Home</a
+        >
+      </li>
+      <li class="header__nav-item">
+        <a class="header--link" href="./library.html">My Library</a>
+      </li>
+    </ul>
+    <div class="header__auth-box">
+      <button class="header__auth-btn auth__my-account" data-auth-modal-open>My Account</button>
+    </div>
+  </nav>
+
+  <div class="theme-switch container">
+    <svg class="theme-switch__icon"  aria-label="Sun">
+      <use href="/src/images/symbol-defs.svg#icon-sun"></use>
+    </svg>
+  
+    <div class="theme-switch__control">
+      <input class="theme-switch__toggle" type="checkbox" name="theme" id="theme-switch-toggle"
+        aria-label="Перемикач" />
+      <label aria-hidden="true" class="theme-switch__track" for="theme-switch-toggle"> </label>
+      <div aria-hidden="true" class="theme-switch__marker"></div>
+    </div>
+  
+    <svg class="theme-switch__icon" aria-label="Moon">
+      <use href="/src/images/symbol-defs.svg#icon-moon"></use>
+    </svg>
+  </div>
+
+  <form class="header__form">
+    <input
+      class="header__input"
+      type="text"
+      name="query"
+      placeholder="Movie search"
+      autocomplete="off"
+    />
+    <button class="header__serach-btn" type="submit">
+      <svg width="12" height="12">
+        <use href="./images/icons.svg#icon-search"></use>
+      </svg>
+    </button>
+  </form>
+  
+  
+</header>
